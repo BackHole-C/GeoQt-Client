@@ -1,0 +1,3 @@
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\GeoQt-Client.dir/objects.a
+D:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\GeoQt-Client.dir/objects.a @CMakeFiles\GeoQt-Client.dir\objects1.rsp
+D:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\GeoQt-Client.dir/objects.a -Wl,--no-whole-archive -o GeoQt-Client.exe -Wl,--out-implib,libGeoQt-Client.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GeoQt-Client.dir\linkLibs.rsp
