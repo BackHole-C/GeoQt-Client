@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/projects/GeoQt-Client/main.cpp" "CMakeFiles/GeoQt-Client.dir/main.cpp.obj" "gcc" "CMakeFiles/GeoQt-Client.dir/main.cpp.obj.d"
   "D:/projects/GeoQt-Client/mainwindow.cpp" "CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj.d"
   "D:/projects/GeoQt-Client/mapcanvas.cpp" "CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj" "gcc" "CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj.d"
+  "D:/projects/GeoQt-Client/tiledownloader.cpp" "CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj" "gcc" "CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

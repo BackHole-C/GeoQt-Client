@@ -1,16 +1,20 @@
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
 #include "mapcanvas.h"
-#include <QDockWidget>
-#include <QLabel>
-#include <QVBoxLayout>
+#include "ui_mainwindow.h"
 #include <QIcon>
+#include <QPushButton>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    initLayout();
+
+    // 设置基础窗口属性
+    setWindowIcon(QIcon(":/res/logo.ico"));
+    resize(1200, 800);
+
+    // 绑定 UI 中的信号（通过 ui-> 访问）
+    connect(ui->initBtn, &QPushButton::clicked, this, &MainWindow::onInitMap);
 }
 
 MainWindow::~MainWindow()
@@ -18,31 +22,19 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::initLayout()
+void MainWindow::onInitMap()
 {
-    // 1. 设置主窗口标题和图标
-    setWindowTitle("GeoQt-Client (极地地理信息系统)");
-    setWindowIcon(QIcon(":/res/logo.ico"));
-    resize(1200, 800);
+    QString ak = ui->akEdit->text().trimmed();
+    if (ak.isEmpty())
+    {
+        ui->coordLabel->setText("<font color='red'>错误：AK 不能为空</font>");
+        return;
+    }
 
-    // 2. 初始化中心挂件：地图画布
-    m_mapCanvas = new MapCanvas(this);
-    setCentralWidget(m_mapCanvas);
+    // 使用 MapCanvas 模式初始化地图
+    ui->mapView->initMapEngine(ak);
 
-    // 3. 初始化左侧停靠面板 (QDockWidget)
-    m_dockPanel = new QDockWidget("业务功能控制面板", this);
-    m_dockPanel->setAllowedAreas(Qt::LeftDockWidgetArea | Qt::RightDockWidgetArea);
-    m_dockPanel->setFeatures(QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-
-    // 面板内部容器
-    QWidget *dockContent = new QWidget();
-    QVBoxLayout *layout = new QVBoxLayout(dockContent);
-
-    QLabel *tipLabel = new QLabel("此处放置具体业务逻辑：\n- POI 搜索\n- 路径规划\n- 图元管理", this);
-    tipLabel->setAlignment(Qt::AlignTop | Qt::AlignLeft);
-    layout->addWidget(tipLabel);
-    layout->addStretch(); // 弹簧将内容推送到上方
-
-    m_dockPanel->setWidget(dockContent);
-    addDockWidget(Qt::LeftDockWidgetArea, m_dockPanel);
+    // 更新界面坐标显示
+    QPointF coord = ui->mapView->centerCoordinate();
+    ui->coordLabel->setText(QString("经度: %1\n纬度: %2").arg(coord.x()).arg(coord.y()));
 }

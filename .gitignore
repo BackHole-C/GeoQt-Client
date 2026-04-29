@@ -1,0 +1,9 @@
+﻿# Qt artifacts
+build/
+*.user
+*.a
+*.o
+*.obj
+
+# Sensitive Data
+config.ini

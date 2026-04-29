@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_logindialog.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_mapcanvas.cpp"
+#include "EWIEGA46WW/moc_tiledownloader.cpp"

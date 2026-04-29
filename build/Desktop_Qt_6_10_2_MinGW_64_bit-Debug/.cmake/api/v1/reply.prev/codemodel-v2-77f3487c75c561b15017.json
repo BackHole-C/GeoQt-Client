@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-8939fe4afd3e1d89cdc8.json",
+					"jsonFile" : "directory-.-Debug-6fa7804fd667c05b43e0.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "GeoQt-Client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GeoQt-Client-Debug-29d26ae8b5e0208a7114.json",
+					"jsonFile" : "target-GeoQt-Client-Debug-fb72afef3b0e005a9a48.json",
 					"name" : "GeoQt-Client",
 					"projectIndex" : 0
 				},

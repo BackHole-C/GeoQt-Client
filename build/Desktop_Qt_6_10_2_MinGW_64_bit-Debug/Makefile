@@ -344,6 +344,30 @@ mapcanvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeoQt-Client.dir\build.make CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.s
 .PHONY : mapcanvas.cpp.s
 
+tiledownloader.obj: tiledownloader.cpp.obj
+.PHONY : tiledownloader.obj
+
+# target to build an object file
+tiledownloader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeoQt-Client.dir\build.make CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj
+.PHONY : tiledownloader.cpp.obj
+
+tiledownloader.i: tiledownloader.cpp.i
+.PHONY : tiledownloader.i
+
+# target to preprocess a source file
+tiledownloader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeoQt-Client.dir\build.make CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.i
+.PHONY : tiledownloader.cpp.i
+
+tiledownloader.s: tiledownloader.cpp.s
+.PHONY : tiledownloader.s
+
+# target to generate assembly for a file
+tiledownloader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeoQt-Client.dir\build.make CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.s
+.PHONY : tiledownloader.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -377,6 +401,9 @@ help:
 	@echo ... mapcanvas.obj
 	@echo ... mapcanvas.i
 	@echo ... mapcanvas.s
+	@echo ... tiledownloader.obj
+	@echo ... tiledownloader.i
+	@echo ... tiledownloader.s
 .PHONY : help
 
 

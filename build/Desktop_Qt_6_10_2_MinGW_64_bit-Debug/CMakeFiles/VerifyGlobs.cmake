@@ -45,12 +45,15 @@ set(OLD_GLOB
   "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/EWIEGA46WW/moc_logindialog.cpp"
   "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/EWIEGA46WW/moc_mapcanvas.cpp"
+  "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/EWIEGA46WW/moc_tiledownloader.cpp"
   "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp"
   "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/mocs_compilation.cpp"
   "D:/projects/GeoQt-Client/logindialog.cpp"
   "D:/projects/GeoQt-Client/main.cpp"
   "D:/projects/GeoQt-Client/mainwindow.cpp"
   "D:/projects/GeoQt-Client/mapcanvas.cpp"
+  "D:/projects/GeoQt-Client/mapsettings.cpp"
+  "D:/projects/GeoQt-Client/tiledownloader.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -73,7 +76,11 @@ set(OLD_GLOB
   "D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/moc_predefs.h"
   "D:/projects/GeoQt-Client/logindialog.h"
   "D:/projects/GeoQt-Client/mainwindow.h"
+  "D:/projects/GeoQt-Client/mapbridge.h"
   "D:/projects/GeoQt-Client/mapcanvas.h"
+  "D:/projects/GeoQt-Client/mapsettings.h"
+  "D:/projects/GeoQt-Client/maputils.h"
+  "D:/projects/GeoQt-Client/tiledownloader.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -128,6 +135,7 @@ endif()
 # _directory_contents at D:/Qt/6.10.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/projects/GeoQt-Client/*.js")
 set(OLD_GLOB
+  "D:/projects/GeoQt-Client/res/js/qwebchannel.js"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

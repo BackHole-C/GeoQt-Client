@@ -383,6 +383,18 @@ CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qcursor.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qbitmap.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qmap.h \
+ D:\projects\GeoQt-Client\maputils.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qmath.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qpoint.h \
+ D:\projects\GeoQt-Client\tiledownloader.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QObject \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qobject.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/QPainter \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qpainter.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qtextoption.h \
@@ -405,7 +417,6 @@ CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QList \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qlist.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QObject \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qobject.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QRect \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qrect.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QSize \

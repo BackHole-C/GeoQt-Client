@@ -77,7 +77,9 @@ GeoQt-Client_autogen/timestamp: CMakeFiles/GeoQt-Client.dir/compiler_depend.ts
 
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/resources.qrc
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/GeoQt-Client_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/res/baidu_map.html
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/res/logo.ico
+GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/res/js/qwebchannel.js
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/Qt/6.10.2/mingw_64/bin/rcc.exe
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/Qt/6.10.2/mingw_64/bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
@@ -158,11 +160,26 @@ CMakeFiles/GeoQt-Client.dir/logindialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GeoQt-Client.dir/logindialog.cpp.s"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\GeoQt-Client\logindialog.cpp -o CMakeFiles\GeoQt-Client.dir\logindialog.cpp.s
 
+CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj: CMakeFiles/GeoQt-Client.dir/flags.make
+CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj: CMakeFiles/GeoQt-Client.dir/includes_CXX.rsp
+CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj: D:/projects/GeoQt-Client/tiledownloader.cpp
+CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj: CMakeFiles/GeoQt-Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj -MF CMakeFiles\GeoQt-Client.dir\tiledownloader.cpp.obj.d -o CMakeFiles\GeoQt-Client.dir\tiledownloader.cpp.obj -c D:\projects\GeoQt-Client\tiledownloader.cpp
+
+CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\GeoQt-Client\tiledownloader.cpp > CMakeFiles\GeoQt-Client.dir\tiledownloader.cpp.i
+
+CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\GeoQt-Client\tiledownloader.cpp -o CMakeFiles\GeoQt-Client.dir\tiledownloader.cpp.s
+
 CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/GeoQt-Client.dir/flags.make
 CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/GeoQt-Client.dir/includes_CXX.rsp
 CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj: GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/GeoQt-Client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\GeoQt-Client.dir\GeoQt-Client_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\GeoQt-Client.dir\GeoQt-Client_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\GeoQt-Client_autogen\EWIEGA46WW\qrc_resources.cpp
 
 CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -180,6 +197,7 @@ GeoQt__Client_OBJECTS = \
 "CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj" \
 "CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj" \
 "CMakeFiles/GeoQt-Client.dir/logindialog.cpp.obj" \
+"CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj" \
 "CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target GeoQt-Client
@@ -190,16 +208,18 @@ GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/main.cpp.obj
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/logindialog.cpp.obj
+GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/build.make
 GeoQt-Client.exe: D:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a
+GeoQt-Client.exe: D:/Qt/6.10.2/mingw_64/lib/libQt6Network.a
 GeoQt-Client.exe: D:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a
 GeoQt-Client.exe: D:/Qt/6.10.2/mingw_64/lib/libQt6Core.a
 GeoQt-Client.exe: D:/Qt/6.10.2/mingw_64/lib/libQt6EntryPoint.a
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/linkLibs.rsp
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/objects1.rsp
 GeoQt-Client.exe: CMakeFiles/GeoQt-Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable GeoQt-Client.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable GeoQt-Client.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GeoQt-Client.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj.d"
   "CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj"
   "CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj.d"
+  "CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj"
+  "CMakeFiles/GeoQt-Client.dir/tiledownloader.cpp.obj.d"
   "CMakeFiles/GeoQt-Client_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/GeoQt-Client_autogen.dir/ParseCache.txt"
   "GeoQt-Client_autogen"

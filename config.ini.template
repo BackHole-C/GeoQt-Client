@@ -1,0 +1,7 @@
+[General]
+# 百度地图访问密钥 (Access Key)
+BaiduMapAK=YOUR_AK_HERE
+
+# 登录账户配置
+LoginUser=admin
+LoginPassword=YOUR_PASSWORD_HERE

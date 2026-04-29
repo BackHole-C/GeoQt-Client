@@ -12,6 +12,8 @@ QT_END_NAMESPACE
 
 class MapCanvas;
 class QDockWidget;
+class QLineEdit;
+class QLabel;
 
 class MainWindow : public QMainWindow
 {
@@ -21,12 +23,10 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
-private:
-    void initLayout();
+private slots:
+    void onInitMap();
 
 private:
     Ui::MainWindow *ui;
-    MapCanvas *m_mapCanvas;
-    QDockWidget *m_dockPanel;
 };
 #endif // MAINWINDOW_H

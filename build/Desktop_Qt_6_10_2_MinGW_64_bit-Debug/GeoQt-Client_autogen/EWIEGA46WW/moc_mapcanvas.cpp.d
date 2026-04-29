@@ -1,5 +1,8 @@
 D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/EWIEGA46WW/moc_mapcanvas.cpp: D:/projects/GeoQt-Client/mapcanvas.h \
   D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/moc_predefs.h \
+  D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
+  D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
+  D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
   D:/Qt/6.10.2/mingw_64/include/QtCore/q17memory.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/q20functional.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/q20iterator.h \
@@ -371,4 +374,5 @@ D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/projects/GeoQt-Client/maputils.h

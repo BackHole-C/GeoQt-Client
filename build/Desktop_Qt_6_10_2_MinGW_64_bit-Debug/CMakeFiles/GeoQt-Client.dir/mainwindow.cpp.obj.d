@@ -385,6 +385,16 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qcursor.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qbitmap.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:\projects\GeoQt-Client\mapcanvas.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qwidget.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qmap.h \
+ D:\projects\GeoQt-Client\maputils.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qmath.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qpoint.h \
  D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/include/ui_mainwindow.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QVariant \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qvariant.h \
@@ -402,18 +412,14 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qinputmethod.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qlocale.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QMainWindow \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QMenuBar \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qmenubar.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qmenu.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QStatusBar \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstatusbar.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qwidget.h \
- D:\projects\GeoQt-Client\mapcanvas.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QDockWidget \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qdockwidget.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QLabel \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlabel.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qframe.h \
@@ -421,11 +427,26 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qiodevice.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qtextdocument.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qurl.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QLineEdit \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlineedit.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qtextcursor.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qtextformat.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpen.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qtextoption.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QMainWindow \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QMenuBar \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qmenubar.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qmenu.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QPushButton \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QSpacerItem \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QStatusBar \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstatusbar.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
+ D:/projects/GeoQt-Client/mapcanvas.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/QIcon \
- D:/Qt/6.10.2/mingw_64/include/QtGui/qicon.h
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qicon.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QPushButton
