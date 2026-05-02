@@ -27,6 +27,9 @@ private slots:
     void onInitMap();
 
 private:
+    void loadConfig();
+    void saveConfig();
+
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

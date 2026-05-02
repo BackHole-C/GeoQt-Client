@@ -44,6 +44,7 @@ template <> constexpr inline auto TileDownloader::qt_create_metaobjectdata<qt_me
         "x",
         "y",
         "zoom",
+        "styles",
         "QPixmap",
         "pixmap",
         "downloadError",
@@ -55,16 +56,17 @@ template <> constexpr inline auto TileDownloader::qt_create_metaobjectdata<qt_me
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'tileDownloaded'
-        QtMocHelpers::SignalData<void(int, int, int, const QPixmap &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 3 }, { QMetaType::Int, 4 }, { QMetaType::Int, 5 }, { 0x80000000 | 6, 7 },
+        QtMocHelpers::SignalData<void(int, int, int, const QString &, const QPixmap &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 3 }, { QMetaType::Int, 4 }, { QMetaType::Int, 5 }, { QMetaType::QString, 6 },
+            { 0x80000000 | 7, 8 },
         }}),
         // Signal 'downloadError'
-        QtMocHelpers::SignalData<void(const QString &)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 9 },
+        QtMocHelpers::SignalData<void(const QString &)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 10 },
         }}),
         // Slot 'onDownloadFinished'
-        QtMocHelpers::SlotData<void(QNetworkReply *)>(10, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 11, 12 },
+        QtMocHelpers::SlotData<void(QNetworkReply *)>(11, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 12, 13 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -89,14 +91,14 @@ void TileDownloader::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     auto *_t = static_cast<TileDownloader *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->tileDownloaded((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QPixmap>>(_a[4]))); break;
+        case 0: _t->tileDownloaded((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QPixmap>>(_a[5]))); break;
         case 1: _t->downloadError((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->onDownloadFinished((*reinterpret_cast<std::add_pointer_t<QNetworkReply*>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (TileDownloader::*)(int , int , int , const QPixmap & )>(_a, &TileDownloader::tileDownloaded, 0))
+        if (QtMocHelpers::indexOfMethod<void (TileDownloader::*)(int , int , int , const QString & , const QPixmap & )>(_a, &TileDownloader::tileDownloaded, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (TileDownloader::*)(const QString & )>(_a, &TileDownloader::downloadError, 1))
             return;
@@ -135,9 +137,9 @@ int TileDownloader::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void TileDownloader::tileDownloaded(int _t1, int _t2, int _t3, const QPixmap & _t4)
+void TileDownloader::tileDownloaded(int _t1, int _t2, int _t3, const QString & _t4, const QPixmap & _t5)
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2, _t3, _t4);
+    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2, _t3, _t4, _t5);
 }
 
 // SIGNAL 1

@@ -2,7 +2,6 @@ D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client
   D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/moc_predefs.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
   D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
-  D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
   D:/Qt/6.10.2/mingw_64/include/QtCore/q17memory.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/q20functional.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/q20iterator.h \
@@ -130,6 +129,7 @@ D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client
   D:/Qt/6.10.2/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.10.2/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
   D:/Qt/6.10.2/mingw_64/include/QtGui/qaction.h \
   D:/Qt/6.10.2/mingw_64/include/QtGui/qbitmap.h \
   D:/Qt/6.10.2/mingw_64/include/QtGui/qbrush.h \
@@ -374,5 +374,4 @@ D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/projects/GeoQt-Client/maputils.h
+  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h

@@ -12,7 +12,7 @@ QT_END_NAMESPACE
 
 /**
  * @brief TileDownloader 类负责从百度地图 API 异步下载地图瓦片
- * 
+ *
  * 包含简单的内存缓存机制，避免同一会话内重复下载相同瓦片。
  */
 class TileDownloader : public QObject
@@ -31,8 +31,9 @@ public:
      * @param y 瓦片 Y 坐标
      * @param zoom 缩放等级
      * @param ak 百度地图 AK
+     * @param styles 地图样式类型 (默认 "pl" 为普通街道图)
      */
-    void downloadTile(int x, int y, int zoom, const QString &ak);
+    void downloadTile(int x, int y, int zoom, const QString &ak, const QString &styles = "pl");
 
     /**
      * @brief 清除内存缓存
@@ -47,7 +48,7 @@ signals:
      * @param zoom 缩放等级
      * @param pixmap 下载后的图像数据
      */
-    void tileDownloaded(int x, int y, int zoom, const QPixmap &pixmap);
+    void tileDownloaded(int x, int y, int zoom, const QString &styles, const QPixmap &pixmap);
 
     /**
      * @brief 请求失败信号
@@ -61,8 +62,8 @@ private slots:
     void onDownloadFinished(QNetworkReply *reply);
 
 private:
-    QNetworkAccessManager *m_manager;   // 网络管理器
-    QMap<QString, QPixmap> m_cache;     // 内存缓存 (Key: "z_x_y")
+    QNetworkAccessManager *m_manager; // 网络管理器
+    QMap<QString, QPixmap> m_cache;   // 内存缓存 (Key: "z_x_y")
 };
 
 #endif // TILEDOWNLOADER_H

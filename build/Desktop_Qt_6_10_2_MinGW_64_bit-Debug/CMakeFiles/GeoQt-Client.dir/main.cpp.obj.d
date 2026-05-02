@@ -404,4 +404,8 @@ CMakeFiles/GeoQt-Client.dir/main.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QLocale \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qlocale.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QTranslator \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qtranslator.h
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qtranslator.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QStyleFactory \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstylefactory.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QPalette \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpalette.h

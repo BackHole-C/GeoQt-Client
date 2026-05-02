@@ -385,16 +385,6 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qcursor.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qbitmap.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qtabwidget.h \
- D:\projects\GeoQt-Client\mapcanvas.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qwidget.h \
- D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qmap.h \
- D:\projects\GeoQt-Client\maputils.h \
- D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qmath.h \
- D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qpoint.h \
  D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/include/ui_mainwindow.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QVariant \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qvariant.h \
@@ -412,8 +402,24 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qinputmethod.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qlocale.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QComboBox \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qcombobox.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QDockWidget \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qdockwidget.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QDoubleSpinBox \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qspinbox.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayout.h \
@@ -422,7 +428,6 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QLabel \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/qframe.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qpicture.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qiodevice.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qtextdocument.h \
@@ -442,11 +447,29 @@ CMakeFiles/GeoQt-Client.dir/mainwindow.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qabstractbutton.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QSpacerItem \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QSpinBox \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QStatusBar \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstatusbar.h \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/projects/GeoQt-Client/mapcanvas.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qmap.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qpoint.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QSettings \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qsettings.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QMessageBox \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qmessagebox.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qdialog.h \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/QIcon \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qicon.h \
- D:/Qt/6.10.2/mingw_64/include/QtWidgets/QPushButton
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/QStyleOption \
+ D:/Qt/6.10.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QPainter \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpainter.h

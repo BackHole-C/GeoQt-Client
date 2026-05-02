@@ -77,9 +77,7 @@ GeoQt-Client_autogen/timestamp: CMakeFiles/GeoQt-Client.dir/compiler_depend.ts
 
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/resources.qrc
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/GeoQt-Client_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
-GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/res/baidu_map.html
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/res/logo.ico
-GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/projects/GeoQt-Client/res/js/qwebchannel.js
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/Qt/6.10.2/mingw_64/bin/rcc.exe
 GeoQt-Client_autogen/EWIEGA46WW/qrc_resources.cpp: D:/Qt/6.10.2/mingw_64/bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"

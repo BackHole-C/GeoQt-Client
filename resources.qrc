@@ -1,8 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>res/logo.ico</file>
-        <file>res/baidu_map.html</file>
-        <file>res/js/qwebchannel.js</file>
     </qresource>
 </RCC>
 

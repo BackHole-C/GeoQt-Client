@@ -1,4 +1,4 @@
-#include "tiledownloader.h"
+﻿#include "tiledownloader.h"
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QNetworkRequest>
@@ -13,59 +13,61 @@ TileDownloader::TileDownloader(QObject *parent)
     connect(m_manager, &QNetworkAccessManager::finished, this, &TileDownloader::onDownloadFinished);
 }
 
-void TileDownloader::downloadTile(int x, int y, int zoom, const QString &ak)
+void TileDownloader::downloadTile(int x, int y, int zoom, const QString &ak, const QString &style)
 {
-    QString key = QString("%1_%2_%3").arg(zoom).arg(x).arg(y);
-    if (m_cache.contains(key)) {
-        emit tileDownloaded(x, y, zoom, m_cache[key]);
-        return;
+    static int serverIdx = 0;
+    int s = serverIdx++ % 4;
+    
+    QString urlStr;
+    
+    if (style.contains("sate")) {
+        // 使用 starpic 接口获取卫星影像
+        urlStr = QString("https://maponline%1.bdimg.com/starpic/?qt=satepc&u=x=%2;y=%3;z=%4;v=009;type=sate&fm=46")
+                     .arg(s).arg(x).arg(y).arg(zoom);
+    } else if (style.contains("none")) {
+        urlStr = QString("https://maponline%1.bdimg.com/tile/?qt=vtile&x=%2&y=%3&z=%4&styles=sl&scaler=1&udt=20240321")
+                     .arg(s).arg(x).arg(y).arg(zoom);
+    } else {
+        // 标准普通图 (vtile)
+        urlStr = QString("https://maponline%1.bdimg.com/tile/?qt=vtile&x=%2&y=%3&z=%4&styles=pl&scaler=1&udt=20240321")
+                     .arg(s).arg(x).arg(y).arg(zoom);
     }
 
-    // 纠正后的百度地图瓦片请求参数
-    // qt=tile: 关键参数，表示请求瓦片数据
-    // styles=pl: 街道图层
-    // udt: 版本时间戳
-    QString urlStr = QString("https://maponline0.bdimg.com/tile/?qt=tile&x=%1&y=%2&z=%3&styles=pl&scaler=1&udt=20230519")
-                         .arg(x)
-                         .arg(y)
-                         .arg(zoom);
-
-    qDebug() << "Fetching Corrected Tile:" << urlStr;
+    if (style.contains("traf")) {
+         if (urlStr.contains("styles=")) {
+             urlStr.replace("styles=pl", "styles=t");
+             urlStr.replace("styles=sl", "styles=t");
+         }
+    }
 
     QUrl url(urlStr);
     QNetworkRequest request(url);
-    request.setHeader(QNetworkRequest::UserAgentHeader, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
-
-    m_manager->get(request);
-}
-
-void TileDownloader::clearCache()
-{
-    m_cache.clear();
+    request.setRawHeader("Referer", "https://map.baidu.com/");
+    request.setHeader(QNetworkRequest::UserAgentHeader, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
+    
+    QNetworkReply *reply = m_manager->get(request);
+    reply->setProperty("tileX", x);
+    reply->setProperty("tileY", y);
+    reply->setProperty("tileZ", zoom);
+    reply->setProperty("tileStyle", style); // 关键：保存完整的 style
 }
 
 void TileDownloader::onDownloadFinished(QNetworkReply *reply)
 {
-    if (reply->error() == QNetworkReply::NoError)
-    {
-        QUrl url = reply->url();
-        QUrlQuery query(url);
-        int x = query.queryItemValue("x").toInt();
-        int y = query.queryItemValue("y").toInt();
-        int z = query.queryItemValue("z").toInt();
+    int x = reply->property("tileX").toInt();
+    int y = reply->property("tileY").toInt();
+    int z = reply->property("tileZ").toInt();
+    QString style = reply->property("tileStyle").toString();
 
+    if (reply->error() == QNetworkReply::NoError) {
         QByteArray data = reply->readAll();
-        QPixmap pixmap;
-        if (pixmap.loadFromData(data))
-        {
-            QString key = QString("%1_%2_%3").arg(z).arg(x).arg(y);
-            m_cache[key] = pixmap;
-            emit tileDownloaded(x, y, z, pixmap);
+        QPixmap pix;
+        if (pix.loadFromData(data)) {
+            // 返回真实的 style 字符串，而不再是 "dynamic"
+            emit tileDownloaded(x, y, z, style, pix);
         }
-    }
-    else
-    {
-        emit downloadError(reply->errorString());
     }
     reply->deleteLater();
 }
+
+void TileDownloader::clearCache() { m_cache.clear(); }

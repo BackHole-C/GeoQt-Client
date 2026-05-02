@@ -1,34 +1,37 @@
-#ifndef MAPCANVAS_H
+﻿#ifndef MAPCANVAS_H
 #define MAPCANVAS_H
 
 #include <QWidget>
 #include <QMap>
-#include "maputils.h"
+#include <QPointF>
+#include <QPixmap>
 
-/**
- * @brief MapCanvas 类是地图渲染的核心画布
- *
- * 负责瓦片地图的绘制、缩放、平移以及覆盖物的渲染。
- */
 class MapCanvas : public QWidget
 {
     Q_OBJECT
 public:
+    enum MapType
+    {
+        Normal,    // 普通地图 (MAP_TYPE_NORMAL)
+        Satellite, // 卫星图 (MAP_TYPE_SATELLITE)
+        None       // 空白地图 (MAP_TYPE_NONE)
+    };
+
     explicit MapCanvas(QWidget *parent = nullptr);
 
-    /**
-     * @brief 初始化地图引擎
-     * @param ak 百度地图开放平台访问密钥
-     */
     void initMapEngine(const QString &ak);
 
-    /**
-     * @brief 获取当前地图中心点坐标
-     */
+    // Getters
     QPointF centerCoordinate() const { return m_centerCoord; }
+    int zoomLevel() const { return m_zoomLevel; }
+    MapType mapType() const { return m_mapType; }
 
-private slots:
-    void onTileReady(int x, int y, int zoom, const QPixmap &pixmap);
+    // Setters (只保留声明，移动实现到 .cpp 以防重定义且方便以后扩展逻辑)
+    void setCenterCoordinate(const QPointF &coord);
+    void setZoomLevel(int level);
+    void setMapType(MapType type);
+    void setTrafficEnabled(bool enabled);
+    void setHeatMapEnabled(bool enabled);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -38,32 +41,19 @@ protected:
     void wheelEvent(QWheelEvent *event) override;
 
 private:
-    /**
-     * @brief 请求并下载当前屏幕可见的所有瓦片
-     */
     void requestVisibleTiles();
-
-    /**
-     * @brief 将经纬度坐标转换为本地组件内部的像素坐标
-     */
-    QPointF coordinateToPixel(const QPointF &coord);
-
-    /**
-     * @brief 将组件内的像素点击位置转换为经纬度坐标
-     */
-    QPointF pixelToCoordinate(const QPoint &pos);
 
     QString m_ak;
     bool m_isInitialized = false;
-    QPointF m_centerCoord = {116.404, 39.915}; 
+    QPointF m_centerCoord = {116.404, 39.915};
     int m_zoomLevel = 12;
+    MapType m_mapType = Normal;
+    bool m_trafficEnabled = false;
+    bool m_heatMapEnabled = false;
 
     class TileDownloader *m_downloader;
-    
-    // 瓦片存储
     QMap<QString, QPixmap> m_tileCache;
-    
-    // 交互状态
+
     bool m_isPanning = false;
     QPoint m_lastMousePos;
 };

@@ -758,7 +758,6 @@ D:/projects/GeoQt-Client/mapcanvas.h
  mmc:Q_OBJECT
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/QMap
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF
- mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/q17memory.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/q20functional.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/q20iterator.h
@@ -886,6 +885,7 @@ D:/projects/GeoQt-Client/mapcanvas.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtCore/qyieldcpu.h
+ mdp:D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap
  mdp:D:/Qt/6.10.2/mingw_64/include/QtGui/qaction.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtGui/qbitmap.h
  mdp:D:/Qt/6.10.2/mingw_64/include/QtGui/qbrush.h
@@ -1133,7 +1133,6 @@ D:/projects/GeoQt-Client/mapcanvas.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/projects/GeoQt-Client/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GeoQt-Client_autogen/moc_predefs.h
  mdp:D:/projects/GeoQt-Client/mapcanvas.h
- mdp:D:/projects/GeoQt-Client/maputils.h
 D:/projects/GeoQt-Client/mapcanvas.cpp
 D:/projects/GeoQt-Client/tiledownloader.h
  mmc:Q_OBJECT

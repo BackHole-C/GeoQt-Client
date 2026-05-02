@@ -385,16 +385,13 @@ CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qbitmap.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qmap.h \
- D:\projects\GeoQt-Client\maputils.h \
- D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qmath.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qpoint.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h \
  D:\projects\GeoQt-Client\tiledownloader.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QObject \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qobject.h \
- D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
- D:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/QPainter \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qpainter.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qtextoption.h \
@@ -432,4 +429,8 @@ CMakeFiles/GeoQt-Client.dir/mapcanvas.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qinputmethod.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qlocale.h \
  D:/Qt/6.10.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/Qt/6.10.2/mingw_64/include/QtGui/QWheelEvent
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QWheelEvent \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qmath.h \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/QDebug \
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qdebug.h

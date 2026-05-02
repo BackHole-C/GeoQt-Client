@@ -399,14 +399,11 @@ CMakeFiles/GeoQt-Client.dir/GeoQt-Client_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.10.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QMap \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qmap.h \
- D:/projects/GeoQt-Client/maputils.h \
- D:/Qt/6.10.2/mingw_64/include/QtCore/QtMath \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qmath.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QPointF \
  D:/Qt/6.10.2/mingw_64/include/QtCore/qpoint.h \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
+ D:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h \
  D:\projects\GeoQt-Client\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\GeoQt-Client_autogen\EWIEGA46WW/moc_tiledownloader.cpp \
  D:/projects/GeoQt-Client/tiledownloader.h \
  D:/Qt/6.10.2/mingw_64/include/QtCore/QObject \
- D:/Qt/6.10.2/mingw_64/include/QtCore/qobject.h \
- D:/Qt/6.10.2/mingw_64/include/QtGui/QPixmap \
- D:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h
+ D:/Qt/6.10.2/mingw_64/include/QtCore/qobject.h
